@@ -1,0 +1,98 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "principal"
+    "musica"
+    "piepagina";
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 1fr 70px;
+  min-height: 100vh;
+background-image: url(../img/fondootros.png);
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+p{
+
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.principal {
+  display: flex;
+ 
+  justify-content: center;
+  grid-area: principal;
+
+}
+
+.logo {
+  width: 300px;
+  border-radius: 100px;
+}
+
+.piepagina {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  grid-area: piepagina;
+  padding-top: 10px;
+}
+
+.musica {
+  text-align: center;
+  grid-area: musica;
+
+  padding: 10px;
+}
+
+.boton {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 1px;
+  font-size: 15px;
+  height: 25px;
+  width: 80px;
+  margin-top: 20px;
+}
+iframe {
+  width: 300px;
+  height: 200px;
+
+}
+
+
+@media screen and (min-width: 576px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 70px;
+  }
+
+  .fotos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .logo {
+    width: 700px;
+    
+  }
+iframe {
+  width: 700px;
+  height: 200px;
+
+}
+
+}
+

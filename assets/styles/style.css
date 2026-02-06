@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  min-height: 100vh;
+}
+
+img {
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+@media screen and (min-width: 576px) {
+  img {
+    width: 500px;
+  }
+
+}
+
+@media screen and (min-width: 2000px) {
+  img {
+    width: 700px;
+  }
+}

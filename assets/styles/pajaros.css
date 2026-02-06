@@ -1,0 +1,45 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+
+
+    background-image: url(../img/pajaros.png);
+    background-size: cover;
+    background-repeat: repeat;   
+    align-items: center;
+}
+
+h1{
+
+color: white;
+display: grid;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+}
+
+.boton {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 1px;
+  font-size: 15px;
+  height: 25px;
+  width: 80px;
+  margin-top: 20px;}
+
+  .buton{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+  }

@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "principal principal"
+    "fotos fotos"
+    "piepagina piepagina";
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 120px 1fr 70px;
+  min-height: 100vh;
+  background-image: url(../img/espacio.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.principal {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  grid-area: principal;
+}
+
+.logo {
+  width: 300px;
+  border-radius: 100px;
+}
+
+.piepagina {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  grid-area: piepagina;
+  padding-top: 10px;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-area: fotos;
+  padding: 20px;
+}
+
+.foto {
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+.foto:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.boton {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 1px;
+  font-size: 15px;
+  height: 25px;
+  width: 80px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+
+      display: grid;
+  grid-template-areas:
+    "principal principal principal"
+    "fotos fotos fotos"
+    "piepagina piepagina piepagina ";
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 270px 1fr 70px;
+   
+  }
+
+
+  .logo {
+    width: 700px;
+  }
+}

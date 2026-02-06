@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "principal"
+    "menulat"
+    "contenido"
+    "piepagina";
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 30px 1fr 90px;
+  min-height: 100vh;
+  min-width: fit-content;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menulat {
+  grid-area: menulat;
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 1px;
+  font-size: 15px;
+  height: 25px;
+  width: 80px;
+  color: red;
+}
+.principal {
+  background-color: black;
+  grid-area: principal;
+  text-align: center;
+}
+
+.contenido {
+  grid-area: contenido;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.piepagina {
+  grid-area: piepagina;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  width: 300px;
+  border-radius: 100px;
+}
+
+.fotito {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  font-size: 18px;
+  margin: 20px;
+}
+@media screen and (min-width: 576px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "principal principal principal"
+      "menulat menulat menulat"
+      "contenido contenido contenido"
+      "piepagina piepagina piepagina";
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    grid-template-rows: 200px 70px 1fr 90px;
+    min-height: 100vh;
+  }
+
+  .fotito {
+    width: 500px;
+  }
+
+  .logo {
+    width: 700px;
+    border-radius: 50px;
+  }
+
+  .boton {
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    height: 50px;
+    color: red;
+  }
+
+  .texto {
+    font-size: 22px;
+    margin: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "principal principal principal"
+      "menulat menulat menulat"
+      "contenido contenido contenido"
+      "piepagina piepagina piepagina";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 70px 1fr 110px;
+    min-height: 100vh;
+  }
+
+  .logo {
+    width: 700px;
+    border-radius: 50px;
+  }
+
+  .boton {
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    height: 50px;
+    color: red;
+  }
+
+  .fotito {
+    width: 700px;
+  }
+  .piepagina {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "principal principal principal"
+      "menulat contenido contenido"
+      "menulat piepagina piepagina";
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    grid-template-rows: 200px 1fr 120px;
+    min-height: 100vh;
+  }
+
+  .logo {
+    width: 700px;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .menulat {
+    display: grid;
+  }
+
+  .boton {
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    height: 50px;
+    color: red;
+    
+  }
+
+  .fotito {
+    width: 800px;
+  }
+  .piepagina {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .fotito {
+    width: 1800px;
+  }
+}
