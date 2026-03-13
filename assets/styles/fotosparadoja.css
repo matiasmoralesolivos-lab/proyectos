@@ -85,6 +85,14 @@ body {
   margin-top: 20px;
 }
 
+p{
+
+  color: white;
+  font-size: 35px;
+}
+
+
+
 @media screen and (min-width: 576px) {
   body {
 
@@ -95,6 +103,8 @@ body {
     "piepagina piepagina piepagina ";
   grid-template-columns: 0.5fr 0.5fr 0.5fr;
   grid-template-rows: 270px 1fr 70px;
+
+
    
   }
 

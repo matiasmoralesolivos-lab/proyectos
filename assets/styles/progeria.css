@@ -15,10 +15,9 @@ body {
   grid-template-rows: 120px 30px 1fr 90px;
   min-height: 100vh;
   min-width: fit-content;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(..//img/baseprogeria.png);
   background-size: cover;
+  background-position: center;
 }
 
 .menulat {
