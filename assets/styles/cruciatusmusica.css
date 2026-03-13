@@ -61,6 +61,12 @@ background-color: black;
   margin-top: 20px;
 }
 
+h1{
+
+color: white;
+
+}
+
 
 @media screen and (min-width: 576px) {
   body {
@@ -100,3 +106,13 @@ iframe {
     width: 700px;
   }
 }
+
+ @media screen and (min-width: 1024px) {
+
+  h1{
+
+display: none;
+
+  }
+  
+ }

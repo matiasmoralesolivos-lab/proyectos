@@ -74,6 +74,11 @@ iframe {
 
 }
 
+h1{
+color: white;
+
+
+}
 
 @media screen and (min-width: 576px) {
   body {
@@ -96,3 +101,12 @@ iframe {
 
 }
 
+@media screen and (min-width: 1024px) {
+
+  h1{
+
+
+    display: none;
+  }
+  
+}
